@@ -11,6 +11,16 @@
         // Global scope
         var globalVar = "I am a global variable";
         let localscope="I am from local variable";
+        const myname="I am from constant variable";
+        function myFunction() {
+            // Local scope
+            var localVar = "I am a local variable";
+            console.log(globalVar); // Accessible
+            console.log(localVar);  // Accessible
+            console.log(localscope);  // Accessible
+            console.log(myname);  // Accessible
+        }
+        myFunction();
     </script>
 </body>
 </html>
