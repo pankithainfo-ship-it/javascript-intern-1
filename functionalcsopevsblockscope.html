@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          var globalVar = "I am a global variable";
+
+          function myfunction(){
+            let localvar='Hello am from local  variable..';
+
+            console.log(localvar);
+            console.log(globalVar);
+            if (true){
+                let blockvar='welcome to block level scope';
+                const constvar='block scope with const';
+                console.log(blockvar);
+                console.log(constvar);
+            }
+            console.log(blockvar);
+            console.log(constvar);
+          }
+          myfunction();
+    </script>
+</body>
+</html>

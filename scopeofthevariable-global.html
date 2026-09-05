@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var globalVar="I am from global variable";//global scope declaration
+
+        function showglobal(){
+            document.write(globalVar+'<br>');//calling global  variable inside of the function
+            
+        }
+        showglobal();
+
+        document.write(globalVar+'<br>');//also calling outside of the function
+
+        if (true){
+            var name = "john";//creating variable with in the block using var keyword 
+        }
+        console.log(name);//calling variable outside of the block/the var ignoring block scope
+
+
+     if (true){
+            let address = "hyderabad";// creating variable with in the block using let keyword //its possible only to call with in the block
+            console.log(address);
+        }
+        console.log(address);//not possible to call variable ouside of the block - it display referenceError in the console
+
+
+
+    </script>
+</body>
+</html>
